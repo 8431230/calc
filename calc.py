@@ -1,5 +1,12 @@
 a = float(input("First number: "))
 b = float(input("Second number: "))
-op = input("Operator (+ - * /): ")
+op = input("Operator: ")
 
-print(eval(f"{a}{op}{b}"))
+if op == "+":
+    print(a + b)
+elif op == "-":
+    print(a - b)
+elif op == "*":
+    print(a * b)
+else:
+    print(a / b)
